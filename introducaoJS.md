@@ -166,3 +166,30 @@ elemento.style.color = cor
 }
 
 # 19. VALIDAÇÃO DE FORMULÁRIO:
+
+# no html:
+
+<body>
+    <form>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="insira o nome aqui"
+      />
+      <input type="submit" onclick="valida()" />
+    </form>
+</body>
+
+# no javascript:
+
+function valida() {
+var nome = document.getElementById('nome')
+if (nome.value == '') {
+alert('Campo nome não pode ser estar em branco')
+} else {
+alert(
+'Nenhum problema foi detectado. Seu formulário pode ser enviado com sucesso'
+)
+}
+}
