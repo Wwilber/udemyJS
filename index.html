@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script language="javascript" src="javaScript/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="insira o nome aqui"
+      />
+      <input type="submit" onclick="valida()" />
+    </form>
+
+    <!-- CRIAR UM EVENTO DO JAVASCRIPT-->
+    <!-- CHAMADA A FUNÇÃO MENSAGEM CRIADA NO JAVASCRIPT-->
+    <button onclick="mensagem()">Click aqui</button>
+    <button onclick="mensagem2('josé')">Clique aqui</button>
+    <button onmouseover="mensagem2('Wilber')">Outro teste de evento</button>
+    <button onmouseleave="mensagem3('João')">mais um teste</button>
+
+    <!-- UTILIZAÇÃO DO DOM-->
+    <span id="mensagem">olá mundo</span>
+    <button onclick="mudaCor('blue')">azul</button>
+    <button onclick="mudaCor('red')">vermelho</button>
+  </body>
+</html>
