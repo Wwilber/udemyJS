@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script language="javascript" src="javaScript/script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
+    <!-- PRÁTICA DO JQUERY-->
+    <h1>Olá Mundo</h1>
+    <h1 id="unico">teste</h1>
+    <button>Esconder Olá Mundo</button>
+    <teste>
+      <p>Mensagem 1</p>
+      <p>Mensagem 2</p>
+      <button id="azul">Azul</button>
+      <button id="vermelho">Vermelho</button>
+    </teste>
     <form>
       <input
         type="text"
@@ -17,17 +26,20 @@
       />
       <input type="submit" onclick="valida()" />
     </form>
-
     <!-- CRIAR UM EVENTO DO JAVASCRIPT-->
     <!-- CHAMADA A FUNÇÃO MENSAGEM CRIADA NO JAVASCRIPT-->
     <button onclick="mensagem()">Click aqui</button>
     <button onclick="mensagem2('josé')">Clique aqui</button>
     <button onmouseover="mensagem2('Wilber')">Outro teste de evento</button>
     <button onmouseleave="mensagem3('João')">mais um teste</button>
-
     <!-- UTILIZAÇÃO DO DOM-->
     <span id="mensagem">olá mundo</span>
     <button onclick="mudaCor('blue')">azul</button>
     <button onclick="mudaCor('red')">vermelho</button>
+    <footer>
+      <script language="javascript" src="javaScript/script.js"></script>
+      <script language="javascript" src="jquery/jquery-3-6-0.js"></script>
+      <script language="javascript" src="jquery/script_jquery.js"></script>
+    </footer>
   </body>
 </html>

@@ -193,3 +193,51 @@ alert(
 )
 }
 }
+
+# jquery:
+
+# 21. baixa e instalação do jquery:
+
+- aberto o jquery - versão completa e criada uma pasta jquery e o arquivo jquery-3-6-0.js e copiado o código
+- criado o arquivo script_jquery.js para criar os códigos do jquery
+
+# 22. Primeiros Passos:
+
+SINTAXE:
+$(seletor).ação();
+
+- função que verifica se o documento foi carregado - HTML(BOA PRÁTICA):
+
+- função .ready = verifica se o html foi carregado para depois efetuar a função seguinte:
+  $(document).ready(function () {
+
+- função .click = quando houver a ação(clique) no seletor "button" vai executar a função .hide(esconde um seletor:h1 = vai esconder o nome que está no h1).
+  $('button').click(function () {
+  $('h1').hide()
+  })
+  })
+
+# 23. Simplificando o jquery:
+
+$(function () {
+$('button').click(function () {
+$('h1').hide()
+})
+})
+
+# 24. Alterando o CSS:
+
+- alteração da cor do h1 - usando o método CSS com os dois parâmetros: a propriedade e valor que vai modificar:
+  $(document).ready(function () {
+  $('button').click(function () {
+  $('h1').css('color', 'red')
+  })
+  })
+
+- alteração da cor do h1 com id:
+  / altera o h1 com id="único":
+  /_ $(document).ready(function () {
+  $('button').click(function () {
+  $('#unico').css('color', 'red')
+  })
+  }) _/
