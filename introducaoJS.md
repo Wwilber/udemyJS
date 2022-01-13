@@ -219,13 +219,22 @@ $(seletor).ação();
 
 # 23. Simplificando o jquery:
 
-$(function () {
+-- $(function () {
 $('button').click(function () {
 $('h1').hide()
 })
-})
+}); -->
 
 # 24. Alterando o CSS:
+
+-- $(document).ready(function () {
+$('#azul').click(function () {
+$('p').css('color', 'blue')
+})
+$('#vermelho').click(function () {
+$('p').css('color', 'red')
+})
+})
 
 - alteração da cor do h1 - usando o método CSS com os dois parâmetros: a propriedade e valor que vai modificar:
   $(document).ready(function () {
@@ -241,3 +250,139 @@ $('h1').hide()
   $('#unico').css('color', 'red')
   })
   }) _/
+
+/\_$(document).ready(function () {
+$(function(){
+('#azul').click(function () {
+$('p').css('color', 'blue')
+})
+$('#vermelho').click(function () {
+$('p').css('color', 'red')
+})
+})
+
+- alterando o background do CSS:
+  $(function () {
+  $('#azul').click(function () {
+  $('p').css('background-color', 'blue')
+  })
+  $('#vermelho').click(function () {
+  $('p').css('background-color', 'red')
+  })
+  })
+
+# 25 e 26 . Efeito FADE - (fade in / fade out) e delay:
+
+// método - delay: pausar a execução do js em milesegundos:
+
+- $(function () {
+$('#azul').click(function () {
+  $('p').css('background-color', 'blue')
+$('p').fadeOut()
+  $('p').delay(1000)
+$('p').fadeIn()
+  })
+  $('#vermelho').click(function () {
+$('p').css('background-color', 'red')
+  $('p').fadeOut('slow')
+$('p').delay(1000)
+  $('p').fadeIn('5000')
+  })
+  })
+
+# 27. Gravando mensagens:
+
+$(function () {
+$('#azul').click(function () {
+$('p').css('background-color', 'blue')
+$('p').fadeOut()
+$('p').delay(1000)
+$('p').fadeIn()
+})
+$('#vermelho').click(function () {
+$('p').css('background-color', 'red')
+$('p').fadeOut('slow')
+$('p').delay(1000)
+$('p').fadeIn(5000)
+$('#mensagem').text('Cor alterada com sucesso')
+$('#mensagem').css('color', 'red')
+$('#mensagem').css('border', '1px solid red')
+$('#mensagem').delay(3000)
+$('#mensagem').fadeOut('fast')
+})
+})
+
+# Encadeamento em blocos:
+
+$(function () {
+$('#azul').click(function () {
+$('p').css('background-color', 'blue')
+$('p').fadeOut()
+$('p').delay(1000)
+$('p').fadeIn()
+})
+$('#vermelho').click(function () {
+$('p').css('background-color', 'red')
+$('p').fadeOut('slow')
+$('p').delay(1000)
+$('p').fadeIn(5000)
+$('#mensagem')
+.text('Cor alterada com sucesso')
+.css('color', 'red')
+.css('border', '1px solid red')
+.delay(3000)
+.fadeOut('fast')
+})
+})
+
+# 29. Declaração Múltipla do CSS:
+
+$(function () {
+$('#azul').click(function () {
+$('p').css('background-color', 'blue')
+$('p').fadeOut()
+$('p').delay(1000)
+$('p').fadeIn()
+})
+$('#vermelho').click(function () {
+$('p').css('background-color', 'red')
+$('p').fadeOut('slow')
+$('p').delay(1000)
+$('p').fadeIn(5000)
+$('#mensagem')
+.text('Cor alterada com sucesso')
+.css({
+color: 'red',
+border: '1px solid red',
+backgroundColor: '#F08080'
+})
+.css()
+.delay(3000)
+.fadeOut('fast')
+})
+})
+
+# 30. Adicionando e removendo classes:
+
+$(function () {
+$('#azul').click(function () {
+$('p').css('background-color', 'blue')
+$('p').fadeOut()
+$('p').delay(1000)
+$('p').fadeIn()
+})
+$('#vermelho').click(function () {
+$('p').css('background-color', 'red')
+$('#mensagem')
+.text('Cor alterada com sucesso')
+.css({
+color: 'red',
+border: '1px solid red'
+})
+.delay(3000)
+.addClass('green')
+$('button').removeClass('red')
+})
+})
+
+# 31. Slideshow
