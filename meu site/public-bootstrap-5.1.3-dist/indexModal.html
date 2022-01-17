@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componente Modal</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- 
+      <link href="ANO 2022\udemyJS\meu site\public-bootstrap-5.1.3-dist\bootstrap.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="container"></div>
+    <h1>Modal</h1>
+    <!-- 
+      class = btn btn-secundary = colorir o botão com cinza  
+      atributo: data-toggle = vincular elemento ao javascript
+      atributo: data-target = aponta o que o modal vai ler(ID que tem o conteúdo  )   
+    -->
+    <button
+      class="btn btn-secondary"
+      data-toggler="modal"
+      data-target="#conteudoModal"
+    >
+      Ativar Modal
+    </button>
+    <!-- MODAL - vai ser um conjunto de DIV´s: -->
+    <!--CRIAÇÃO DE DIV COM ID - CONTEÚDO DO MODAL:-->
+    <div id="conteudoModal">
+      <!--CRIAÇÃO DA CLASSE COM UMA CAIXA DE DIÁLOGO:-->
+      <div class="modal-dialog">
+        <!--CRIAÇÃO DA CLASSE COM O CONTEÚDO DO MODAL:-->
+        <div class="modal-content">
+          <!--CRIAÇÃO DA CLASSE COM O TÍTULO DO MODAL(cabeçalho):-->
+          <div class="modal-reader">
+            <h4>Meu Modal</h4>
+            <!-- DECLARAÇÃO DO BOTÃO DE ENCERRAR (X):-->
+            <!-- DECLARADA A CLASSE CLASS="CLOSE" E DATA-DISMISS="MODAL" = fecha o modal-->
+            <button class="close" data-dismiss="modal" arial-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--CRIAÇÃO DO CONTEÚDO DO MODAL:-->
+          <div class="modal-body">TEXTO DO MEU MODAL</div>
+          <!--CRIAÇÃO DO RODAPÉ DO MODAL:-->
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--MODAL:-->
+    <footer>
+      <!-- 
+      <script
+        language="javascript"
+        src="ANO 2022\udemyJS\meu site\public-bootstrap-5.1.3-dist\js\jquery-3-6-0.js"
+      ></script>
+      <script
+        language="javascript"
+        src="ANO 2022\udemyJS\meu site\public-bootstrap-5.1.3-dist\js\bootstrap.bundle.min.js"
+      ></script> -->
+      <!-- JS -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"
+      ></script>
+    </footer>
+  </body>
+</html>
